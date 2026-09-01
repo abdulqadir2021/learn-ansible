@@ -48,5 +48,5 @@
       register: out
 
     - name: Print out
-      ansible.builtin.dnf:
+      ansible.builtin.debug:
         msg: "{{ out }}"
