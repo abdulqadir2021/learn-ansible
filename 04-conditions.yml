@@ -24,9 +24,9 @@
       ansible.builtin.debug:
         msg: Number {{ number }} is even
       when: reminder.stdout == "0"
-#
-#    - name: Boolean condition
-#      ansible.builtin.debug:
-#        msg: to_install - true
-#      when: to_install
-#
+
+    - name: Boolean condition
+      ansible.builtin.debug:
+        msg: to_install - true
+      when: to_install
+
