@@ -10,3 +10,20 @@
 
 
 # Here in the above msg line, we have th vle
+
+- name: Demo on variables
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print URL
+      ansible.builtin.debug:
+        msg: URL - {{ URL }}
+      vars:
+        URL: tasks.google.com
+
+
+- name: Demo on variables - Role variables
+  hosts: localhost
+  connection: local
+  roles:
+    - sample
