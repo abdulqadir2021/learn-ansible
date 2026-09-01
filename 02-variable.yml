@@ -32,6 +32,6 @@
 ## Precedence
 # 1. CLI
 # 2. Tasks
-# 3. Roles- Vars
+# 3. Roles- vars
 # 4. Playbook - Play vars
 # 5. Roles - defaults
