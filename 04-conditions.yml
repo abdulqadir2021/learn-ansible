@@ -20,10 +20,10 @@
 #      ansible.builtin.shell: echo $(({{number}}%2))
 #      register: reminder
 #
-#    - name: Print Even Number
-#      ansible.builtin.debug:
-#        msg: Number {{ number }} is even
-#      when: reminder.stdout == "0"
+    - name: Print Even Number
+      ansible.builtin.debug:
+        msg: Number {{ number }} is even
+      when: reminder.stdout == "0"
 #
 #    - name: Boolean condition
 #      ansible.builtin.debug:
